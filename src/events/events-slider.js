@@ -30,7 +30,7 @@ export function renderSlider(container, events) {
       card.classList.add("active")
     }
 
-    card.href = `/events.html?id=${event.id}`
+    card.href = `${import.meta.env.BASE_URL}events.html?id=${event.id}`
 
     card.innerHTML = `
       <img

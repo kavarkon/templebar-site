@@ -3,7 +3,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('./assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
+  src: url('../assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+  src: url('../assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
 }
 
 body {
@@ -79,7 +79,6 @@ a {
   display: block;
   flex-shrink: 0;
 
-  background-image: url("/cancel.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

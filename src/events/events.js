@@ -1,5 +1,6 @@
 import tileIcon from "../assets/icons/tile.svg"
 import carouselIcon from "../assets/icons/carousel.svg"
+import cancelIcon from "../assets/icons/cancel.svg"
 import { loadEvents } from "./events-api.js"
 import { renderSlider } from "./events-slider.js"
 import { renderGrid } from "./events-grid.js"
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     state.events = await loadEvents()
-  } catch (error) {
+  } catch {
     container.textContent = "Не удалось загрузить мероприятия"
     return
   }
@@ -90,9 +91,11 @@ function setupBackButton(eventId) {
 
   if (!backBtn) return
 
+  backBtn.style.backgroundImage = `url("${cancelIcon}")`
+
   if (eventId) {
-    backBtn.href = "/events.html"
+    backBtn.href = `${import.meta.env.BASE_URL}events.html`
   } else {
-    backBtn.href = "/"
+    backBtn.href = import.meta.env.BASE_URL
   }
 }

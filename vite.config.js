@@ -3,7 +3,7 @@ import { resolve } from "path"
 
 export default defineConfig({
   appType: "spa",
-  base: "/",
+  base: "/templebar-site/",
 
   build: {
     assetsInlineLimit: 0,

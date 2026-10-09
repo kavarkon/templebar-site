@@ -9,7 +9,7 @@ export function renderGrid(container, events) {
     const card = document.createElement("a")
 
     card.className = "event-grid-card"
-    card.href = `/events.html?id=${event.id}`
+    card.href = `${import.meta.env.BASE_URL}events.html?id=${event.id}`
 
     card.innerHTML = `
       <img
